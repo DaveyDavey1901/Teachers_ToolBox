@@ -1,17 +1,18 @@
-# Teachers_ToolBox
+# :small_orange_diamond: Teachers_ToolBox
 
 ## Table of Contents:
-  1. [Description](#Description) 
-  2. [Installation](#Installation)
-  3. [Usage](#Usage)  
-  4. [Contributing](#Contributing-and-Resources)
-  5. [GitHub Repository](#Repository-Details-Link)
-  6. [Tests](#Tests)
-  4. [License](#License-Link)
-  7. [GitHub](#GitHub-Account)
-  8. [E-mail](#E-mail)
+  1. [Description](#description) 
+  2. [Live Site](#live)
+  3. [Installation](#installation)
+  4. [Usage](#usage)  
+  5. [Contributing](#contributing-people)
+  6. [GitHub Repository](#repository-details-and-link)
+  7. [Tests](#tests)
+  8. [License](#license-link)
+  9. [E-mail](#e-mail)
+ 
   
-## Description
+## :small_orange_diamond: Description
 
 
 
@@ -20,7 +21,7 @@
 
 :file_folder:[Click Here to View the Screencast Video]()
 
-
+## Live
 
 
 ## Installation
@@ -30,13 +31,15 @@
 
 
 
-## Contributing People and Resources
+## Contributing People
 
-David Davies
+contact me if you have any questions about the Teachers Toolbox.
+
+**Developers Contact details:**
+
+  - Github: [@DaveyDavey1901](https://github.com/DaveyDavey1901)
 
 ## Repository Details and Link.
-
-
 
 ## Tests
 
@@ -45,16 +48,6 @@ Insomnia and Postman Agent
 
 ## License Link
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) Click Badge for License Details.
-
-
-
-## Questions:
-
-contact me if you have any questions about the Teachers Toolbox.
-
-## GitHub Account
-
-DaveyDavey1901
 
 ## E-mail
 
