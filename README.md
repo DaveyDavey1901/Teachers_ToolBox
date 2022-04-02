@@ -12,7 +12,7 @@
   9. [E-mail](#e-mail)
  
   
-## :small_orange_diamond: Description
+## Description
 
 
 
