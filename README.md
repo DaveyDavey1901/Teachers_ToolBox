@@ -52,10 +52,10 @@ Insomnia and Postman Agent
 
 contact me if you have any questions about the Teachers Toolbox.
 
-## :small_blue_diamond: GitHub Account
+## GitHub Account
 
 DaveyDavey1901
 
-## :small_blue_diamond: E-mail
+## E-mail
 
 Drop me an email at david_davies@mail.com if you would like to know more or would like to contribute.
