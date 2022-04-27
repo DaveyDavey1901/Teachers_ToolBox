@@ -14,6 +14,11 @@
  
   
 ## Description
+<p align="center" width="100%">
+    <img width="60%" src="https://user-images.githubusercontent.com/86046871/165640603-dbc8350f-73f7-46ed-b8fe-6e3030cd92ce.png"> 
+</p>
+
+
 Teachers ToolBox is designed to give additional tools to teachers to help them teach their children in the current curriculum.  
 
 Teachers Will Beable to:-
@@ -42,7 +47,7 @@ Parents Will Beable to:-
 6. Utilise tools to help in their daily lives. 
 
 
-|<img src="https://github.com/DaveyDavey1901/Teachers_ToolBox/issues/11#issue-1217938401" width="600">| 
+ 
 
 
 :file_folder:[Click Here to View the Screencast Video]()
