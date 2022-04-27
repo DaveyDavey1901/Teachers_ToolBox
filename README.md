@@ -42,7 +42,7 @@ Parents Will Beable to:-
 6. Utilise tools to help in their daily lives. 
 
 
-|<img src="public/images/Tech Blog.gif" width="600">| 
+|<img src="https://github.com/DaveyDavey1901/Teachers_ToolBox/issues/11#issue-1217938401" width="600">| 
 
 
 :file_folder:[Click Here to View the Screencast Video]()
