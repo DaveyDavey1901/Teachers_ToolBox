@@ -1,12 +1,16 @@
-import './App.css';
+import GlobalStyles from "./styles/Global";
+import { ThemeProvider } from "styled-components";
+import { ThemeSize } from "./styles/Responsive";
+import {HomeP} from "../src/pages/Home";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <h1>Teachers Toolbox</h1>
-      </header>
-    </div>
+    <>
+    <ThemeProvider theme={ThemeSize}>
+      <GlobalStyles />
+      <HomeP />
+    </ThemeProvider>
+    </>
   );
 }
 
