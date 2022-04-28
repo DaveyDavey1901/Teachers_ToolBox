@@ -24,13 +24,13 @@ export function TTSocials() {
 
   return (
     <Socials>
-      <a href="https://linkedin.com" rel="noreferrer" target="_blank">
+      <a href="https://linkedin.com" rel="noreferrer" target="_blank" alt="LinkedIn">
         <BsLinkedin size={15} />
       </a>
-      <a href="https://twitter.com" rel="noreferrer" target="_blank">
+      <a href="https://twitter.com" rel="noreferrer" target="_blank" alt="Twitter">
         <BsTwitter size={15} />
       </a>
-      <a href="https://facebook.com" rel="noreferrer" target="_blank">
+      <a href="https://facebook.com" rel="noreferrer" target="_blank" alt="facebook">
         <BsFacebook size={15} />
       </a>
     </Socials>

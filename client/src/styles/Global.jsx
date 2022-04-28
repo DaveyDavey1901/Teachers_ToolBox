@@ -39,7 +39,7 @@ html {
   }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: var(--color-bg);
   color: var(--color-bluedark);
   line-height: 1.6;

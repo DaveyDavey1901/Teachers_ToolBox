@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import {Button} from '../../styles/Buttons'
-
+import { useNavigate } from "react-router-dom";
 
 const BtnContainer = styled.div`
   margin: 2.5rem 0;
@@ -11,12 +11,12 @@ const BtnContainer = styled.div`
 `
 
 export function LoginBtn () {
-
+  const navigate = useNavigate();
+  
   return (
     <BtnContainer>
-      <Button href="#" >
-        Login
-      </Button>
+      <Button onClick={() => navigate('/ttdashboard')}>Login</Button>
+    
       <Button href="#contact">Contact Us</Button>
     </BtnContainer>
   );
