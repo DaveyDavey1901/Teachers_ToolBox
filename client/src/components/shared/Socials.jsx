@@ -8,15 +8,18 @@ const Socials = styled.div`
   flex-direction: column;
   align-items: center;
   position: absolute;
+  position: fixed;
   bottom: 50%;
   right: 0;
   border: solid 2px var(--color-white);
   padding: 1rem;
   border-radius: 12px 0 0 12px;
   background-color: var(--color-bluedark);
+  z-index: -1;
 
-    @media (max-width: ${({ theme }) => theme.mobile}) {
-    display: none;
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    position: fixed;
+    bottom: 7rem;
   }
 `;
 

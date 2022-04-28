@@ -11,9 +11,9 @@ const HomeContainer = styled.div`
 const HomeSection = styled.div`
   text-align: center;
   justify-content: center;
-
+  margin-top: 5rem;
   height: 100%;
-  margin: 0 1rem;
+  
   h1 {
     width: 100%;
     font-weight: 700;

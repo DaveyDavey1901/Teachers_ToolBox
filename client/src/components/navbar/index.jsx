@@ -7,9 +7,9 @@ import { MobileLinks } from "./mobileNavLinks";
 
 const NavbarContainer = styled.div`
   display: flex;
+  position:fixed;
   width: 100%;
   height: 5rem;
-  padding: 2;
   align-items: center;
   background-color: var(--color-bluedark);
   border-bottom: 1px solid var(--color-white);
