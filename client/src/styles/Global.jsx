@@ -25,6 +25,7 @@ const GlobalStyles = createGlobalStyle`
   --color-primary-varient: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
   --color-bluedark: #04253D;
+  --color-bluedark-varient:rgba(4, 37, 61, 0.9);
   --color-light: rgba(255, 255, 255, 0.5);
   --color-canaryyellow:#F5D667;
   --color-darkred:#9A0C0C;

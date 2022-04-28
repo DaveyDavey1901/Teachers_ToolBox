@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import TTImg from "../assets/images/HeroTT.png";
+import TTImg from "../assets/images/HeroTT.avif";
 import { TTSocials } from "../components/shared/Socials";
 import { LoginBtn } from "../components/HomeScreen/LoginBtn";
 
 const HomeContainer = styled.div`
   width: 100vw;
   height: 100vh;
-  padding-top: 5rem;
+  padding-top: 7rem;
 `;
 const HomeSection = styled.div`
   text-align: center;
@@ -43,12 +43,15 @@ export function HomeP() {
       <HomeSection>
         <h1>Hello and Welcome</h1>
         <p>
-          Please login or contact us if you would like to know more about <br ></br>'The
-          Teachers Toolbox'.
+          Please login or contact us if you would like to know more about{" "}
+          <br></br>'The Teachers Toolbox'.
         </p>
 
         <TTImgWrapper>
-          <img src={TTImg} alt="Teachers Toolbox Main" />
+          <img
+            src={TTImg}
+                        alt="Teachers Toolbox Main"
+          />
 
           <LoginBtn />
           <small>&copy; Teachers_Toolbox. All rights reserved 2022</small>
