@@ -11,11 +11,11 @@ const Socials = styled.div`
   position: fixed;
   bottom: 50%;
   right: 0;
-  border: solid 2px var(--color-white);
+  border: solid 2px #d9d9a0;
   padding: 1rem;
   border-radius: 12px 0 0 12px;
   background-color: var(--color-bluedark);
-  z-index: -1;
+  z-index: 2;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     position: fixed;
