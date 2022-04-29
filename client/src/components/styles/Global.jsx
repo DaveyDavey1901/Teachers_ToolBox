@@ -29,6 +29,7 @@ const GlobalStyles = createGlobalStyle`
   --color-light: rgba(255, 255, 255, 0.5);
   --color-canaryyellow:#F5D667;
   --color-darkred:#9A0C0C;
+  --color-caramel:#D9D9A0;
 
   --transition:transition: all 500ms ease;
 
@@ -79,6 +80,12 @@ img{
   display:block;
   width: 100%;
   object-fit: cover;
+}
+
+
+.swiper-pagination-clickable .swiper-pagination-bullet{
+  background: var(--color-canaryyellow)
+  
 }
 
 `;

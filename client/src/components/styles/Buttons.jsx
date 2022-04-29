@@ -68,3 +68,19 @@ export const SignOutBtn = styled.button`
     transform: scale(0.98);
   }
 `;
+
+export const LoginBtn = styled.button`
+  border: 0;
+  outline: 0;
+  padding: 0.6rem 1rem;
+  color: var(--color-white);
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 12px;
+
+  background-color: var(--color-bluedark);
+  border: solid 2px var(--color-canaryyellow);
+  &:hover {
+    transform: scale(0.98);
+  }
+`;

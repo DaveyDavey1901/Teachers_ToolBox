@@ -26,14 +26,14 @@ const HomeSection = styled.div`
   
 `;
 const TTImgWrapper = styled.div`
-  width: 40%;
+  width: 50%;
   height: auto;
   margin: 2rem auto auto auto;
   @media (max-width: ${({ theme }) => theme.tablet}) {
-    width: 80%;
+    width: 60%;
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 100%
+    width: 70%
   }
 `;
 
