@@ -12,11 +12,11 @@ const MiniNav = styled.div`
   position: fixed;
   bottom: 50%;
   left: 0;
-  border: solid 2px var(--color-white);
+  border: solid 2px #d9d9a0;
   padding: 1rem;
   border-radius: 0 12px 12px 0;
   background-color: var(--color-bluedark);
-  z-index: -1;
+  z-index: 2;
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     position: fixed;
