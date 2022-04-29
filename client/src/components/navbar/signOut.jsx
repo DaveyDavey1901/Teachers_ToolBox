@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {SignOutBtn} from '../../styles/Buttons'
+import {SignOutBtn} from '../styles/Buttons'
 import { useNavigate } from "react-router-dom";
 
 const LoginContainer = styled.div`

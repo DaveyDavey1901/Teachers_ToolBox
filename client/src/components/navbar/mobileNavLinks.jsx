@@ -56,7 +56,7 @@ const StyledLink = styled(Link)`
 `;
 
 export function MobileLinks(props) {
-  const [isOpen, setOpen] = useState(true);
+  const [isOpen, setOpen] = useState(false);
 
   return (
     <NavLinksContainer>

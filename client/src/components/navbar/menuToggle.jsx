@@ -26,13 +26,13 @@ export function MenuToggle({ toggle, isOpen }) {
           initial={false}
           variants={{
             closed: { d: "M 2 2.5 L 20 2.5", stroke: "#39BDE3" },
-            open: { d: "M 3 16.5 L 17 2.5", stroke: "#fff" },
+            open: { d: "M 3 16.5 L 17 2.5", stroke: "#D9D9A0" },
           }}
           transition={transition}
         />
         <Path
           d="M 2 9.423 L 20 9.423"
-          stroke="#fff"
+          stroke="#D9D9A0"
           animate={isOpen ? "open" : "closed"}
           initial={false}
           variants={{

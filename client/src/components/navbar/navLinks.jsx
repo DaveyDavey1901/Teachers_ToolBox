@@ -31,7 +31,7 @@ const LinkItem = styled.li`
   border-top: 2px solid transparent;
   transition: all 240ms ease-in-out;
   &:hover {
-    border-top: 2px solid #fff;
+    border-top: 2px solid var(--color-caramel);
     transform: scale(0.95);
   }
 `;

@@ -2,19 +2,23 @@ import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
 import { NavLinks } from "./navLinks";
 import { SignOut} from "./signOut";
-import { ThemeSize } from "../../styles/Responsive";
+import { ThemeSize } from "../styles/Responsive"
 import { MobileLinks } from "./mobileNavLinks";
 
 const NavbarContainer = styled.div`
   display: flex;
-  position:fixed;
+  position: fixed;
   width: 100%;
-  height: 5rem;
+  height: 7rem;
   align-items: center;
   background-color: var(--color-bluedark);
-  border-bottom: 1px solid var(--color-white);
+  border-bottom: 2px solid var(--color-caramel);
   justify-content: space-between;
-  
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
+  z-index: 999;
 `;
 
 const NavbarLeft = styled.div`
@@ -33,7 +37,7 @@ const NavbarRight = styled.div`
 `;
 
 export function Navbar(props) {
-  const isMobile = useMediaQuery({ maxWidth: ThemeSize.mobile});
+  const isMobile= useMediaQuery({ maxWidth: ThemeSize.mobile});
 
   return (
     <NavbarContainer>
