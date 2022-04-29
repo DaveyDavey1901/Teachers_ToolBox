@@ -4,16 +4,22 @@ import TTImg from "../../assets/images/HeroTT.avif";
 import { TTSocials } from "../../components/shared/Socials";
 
 const HomeContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
   width: 100vw;
-  height: 100vh;
+  height: 50%;
   padding-top: 5rem;
-`;
+  `;
 const HomeSection = styled.div`
   text-align: center;
   justify-content: center;
-  margin-top: 5rem;
+  margin: 10rem;
+  padding: 1rem;
   height: 100%;
-  
+
   h1 {
     width: 100%;
     font-weight: 700;
@@ -24,14 +30,14 @@ const HomeSection = styled.div`
   }
 `;
 const TTImgWrapper = styled.div`
-  width: 40%;
+  width: 50%;
   height: auto;
   margin: 2rem auto auto auto;
   @media (max-width: ${({ theme }) => theme.tablet}) {
-    width: 80%;
+    width: 60%;
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 100%;
+    width: 70%;
   }
 `;
 
