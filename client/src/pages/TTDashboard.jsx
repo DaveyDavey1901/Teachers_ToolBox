@@ -1,4 +1,4 @@
-import { TTDash } from "../components/TTDashboard";
+import { TTDash } from "../components/dashboard";
 
 export function TTDashboard() {
   return (

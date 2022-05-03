@@ -12,10 +12,9 @@ export const Button = styled.button`
   padding: 6px;
   background-color: ${({ bg }) => bg || "#04253D"};
   color: ${({ color }) => color || "#ffff"};
-  border: solid 2px var(--color-white);
+  border: solid 2px var(--color-canaryyellow);
   &:hover {
     transform: scale(0.98);
-
   }
 `;
 
