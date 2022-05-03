@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import TTImg from "../assets/images/HeroTT.avif";
 import { TTSocials } from "../components/shared/Socials";
-import { LoginBtn } from "../components/HomeScreen/LoginBtn";
 
 const HomeContainer = styled.div`
   width: 100vw;
@@ -14,7 +13,7 @@ const HomeSection = styled.div`
   justify-content: center;
 
   height: 100%;
-  margin: 0 1rem;
+  margin: 6rem 1rem auto 1rem;
   h1 {
     width: 100%;
     font-weight: 700;
@@ -23,7 +22,6 @@ const HomeSection = styled.div`
     width: 100%;
     font-size: 1.6rem;
   }
-  
 `;
 const TTImgWrapper = styled.div`
   width: 50%;
@@ -33,7 +31,7 @@ const TTImgWrapper = styled.div`
     width: 60%;
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 70%
+    width: 70%;
   }
 `;
 
@@ -48,12 +46,8 @@ export function HomeP() {
         </p>
 
         <TTImgWrapper>
-          <img
-            src={TTImg}
-                        alt="Teachers Toolbox Main"
-          />
+          <img src={TTImg} alt="Teachers Toolbox Main" />
 
-          <LoginBtn />
           <small>&copy; Teachers_Toolbox. All rights reserved 2022</small>
         </TTImgWrapper>
         <TTSocials />
