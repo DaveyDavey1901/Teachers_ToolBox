@@ -72,6 +72,7 @@ MERN STACK
 6. Apollo Server  [link](https://www.apollographql.com/docs/)
 7. Framer Motion  [link](https://www.framer.com/motion/)
 8. Figma   [link](https://www.figma.com/)
+9. Swiper [link](https://swiperjs.com/)
 
 ## Contributing People
 
