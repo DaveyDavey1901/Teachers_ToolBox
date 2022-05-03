@@ -15,7 +15,7 @@
   
 ## Description
 <p align="center" width="100%">
-    <img width="60%" src="https://user-images.githubusercontent.com/86046871/165640603-dbc8350f-73f7-46ed-b8fe-6e3030cd92ce.png"> 
+    <img width="60%" src="https://user-images.githubusercontent.com/86046871/166455029-7c42c0cf-af38-4960-b5b3-20fd528b0e6e.png"> 
 </p>
 
 
@@ -62,6 +62,17 @@ Parents Will Beable to:-
 
 ## Technologies Used
 
+MERN STACK
+1. MongoDb Atlas [link](https://www.mongodb.com/)
+2. Express.js  [link](https://expressjs.com/)
+3. React  [link](https://reactjs.org/)
+4. Nodejs  [link](https://nodejs.org/en/)
+
+5. GraphQL  [link](https://graphql.org/)
+6. Apollo Server  [link](https://www.apollographql.com/docs/)
+7. Framer Motion  [link](https://www.framer.com/motion/)
+8. Figma   [link](https://www.figma.com/)
+
 ## Contributing People
 
 contact me if you have any questions about the Teachers Toolbox.
@@ -74,8 +85,8 @@ contact me if you have any questions about the Teachers Toolbox.
 
 ## Tests
 
-For testing purposes, run the following command:
-Insomnia and Postman Agent
+you can test the routes for the server with:-
+Apollo Server studio [link](https://studio.apollographql.com/login?from=%2F)
 
 ## License Link
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) Click Badge for License Details.
