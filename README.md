@@ -86,7 +86,7 @@ contact me if you have any questions about the Teachers Toolbox.
 ## Tests
 
 you can test the routes for the server with:-
-Apollo Server studio [link] (https://studio.apollographql.com/login?from=%2F)
+Apollo Server studio [link](https://studio.apollographql.com/login?from=%2F)
 
 ## License Link
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) Click Badge for License Details.
