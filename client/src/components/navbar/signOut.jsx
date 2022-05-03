@@ -2,17 +2,51 @@ import styled from "styled-components";
 import {SignOutBtn} from '../styles/Buttons'
 import { useNavigate } from "react-router-dom";
 
+
+import { AuthContext } from "../../context/authContext";
+import { useContext } from "react";
+import { Button } from "../styles/Buttons";
+
 const LoginContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:Button{
+    margin-right: 1rem;
+  }
 `;
 
 export function SignOut(props) {
   const navigate = useNavigate();
+  const { user, logout } = useContext(AuthContext);
+
+  const onLogout = () => {
+    logout();
+    navigate("/");
+  };
+  console.log(user);
   return (
     <LoginContainer>
-       <SignOutBtn onClick={() => navigate('/')}>Sign Out</SignOutBtn>
-    </LoginContainer>
+      {user ? (
+        <>
+          <SignOutBtn
+            
+            onClick={onLogout}
+          >
+            Logout
+          </SignOutBtn>
+        </>
+      ) : (
+        <>
+          {" "}
+          <Button onClick={() => navigate('/login')}>Login</Button>
+          <Button onClick={() => navigate('/register')}>Register</Button>
+         
+        </>
+      )}
+         </LoginContainer>
   );
 }
+  
+ 
