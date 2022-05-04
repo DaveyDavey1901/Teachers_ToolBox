@@ -1,6 +1,11 @@
 import React from 'react'
 import styled from "styled-components";
-import { BsLinkedin, BsTwitter, BsFacebook } from "react-icons/bs";
+import {
+  BsLinkedin,
+  BsTwitter,
+  BsFacebook,
+  BsFillEnvelopeFill,
+} from "react-icons/bs";
 
 const Socials = styled.div`
   display: flex;
@@ -27,14 +32,32 @@ export function TTSocials() {
 
   return (
     <Socials>
-      <a href="https://linkedin.com" rel="noreferrer" target="_blank" alt="LinkedIn">
+      <a
+        href="https://linkedin.com"
+        rel="noreferrer"
+        target="_blank"
+        alt="LinkedIn"
+      >
         <BsLinkedin size={15} />
       </a>
-      <a href="https://twitter.com" rel="noreferrer" target="_blank" alt="Twitter">
+      <a
+        href="https://twitter.com"
+        rel="noreferrer"
+        target="_blank"
+        alt="Twitter"
+      >
         <BsTwitter size={15} />
       </a>
-      <a href="https://facebook.com" rel="noreferrer" target="_blank" alt="facebook">
+      <a
+        href="https://facebook.com"
+        rel="noreferrer"
+        target="_blank"
+        alt="facebook"
+      >
         <BsFacebook size={15} />
+      </a>
+      <a href="#contact" rel="noreferrer" target="_blank" alt="contact form">
+        <BsFillEnvelopeFill size={15} />
       </a>
     </Socials>
   );

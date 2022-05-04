@@ -6,14 +6,15 @@ export const Button = styled.button`
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   width: 12rem;
 
+  margin-right: 1rem;
   font-size: 1.6rem;
   font-weight: 700;
-  padding: 1rem;
+  padding: 6px;
   background-color: ${({ bg }) => bg || "#04253D"};
   color: ${({ color }) => color || "#ffff"};
-  border: solid 2px var(--color-white);
+  border: solid 2px var(--color-canaryyellow);
   &:hover {
-        transform: scale(0.98);
+    transform: scale(0.98);
   }
 `;
 

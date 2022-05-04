@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+import { AuthContext } from "../../context/authContext";
+import { useContext } from "react";
+
 const NavLinksContainer = styled.div`
   display: flex;
   flex: center;
@@ -46,21 +49,29 @@ const StyledLink = styled(Link)`
 `;
 
 export function NavLinks(props) {
+  const { user } = useContext(AuthContext);
   return (
     <NavLinksContainer>
       <LinksWrapper>
-        <LinkItem>
-          <StyledLink to="/ttdashboard">My Dashboard</StyledLink>
-        </LinkItem>
-        <LinkItem>
-          <StyledLink to="/subject">Subject Selection</StyledLink>
-        </LinkItem>
-        <LinkItem>
-          <StyledLink to="/store">School Store</StyledLink>
-        </LinkItem>
-        <LinkItem>
-          <StyledLink to="/contact">Contact Us</StyledLink>
-        </LinkItem>
+        {" "}
+        {user ? (
+          <>
+            <LinkItem>
+              <StyledLink to="/ttdashboard">My Dashboard</StyledLink>
+            </LinkItem>
+            <LinkItem>
+              <StyledLink to="/subject">Subject Selection</StyledLink>
+            </LinkItem>
+            <LinkItem>
+              <StyledLink to="/store">School Store</StyledLink>
+            </LinkItem>
+            <LinkItem>
+              <StyledLink to="/contact">Contact Us</StyledLink>
+            </LinkItem>
+          </>
+        ) : (
+          <></>
+        )}
       </LinksWrapper>
     </NavLinksContainer>
   );

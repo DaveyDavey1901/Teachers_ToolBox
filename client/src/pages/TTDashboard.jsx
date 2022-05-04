@@ -1,12 +1,9 @@
-import { TTDash } from "../components/TTDashboard"
-import {Navbar} from '../components/navbar'
+import { TTDash } from "../components/dashboard";
 
 export function TTDashboard() {
   return (
     <div>
-      <Navbar />
       <TTDash />
-      
     </div>
   );
 }

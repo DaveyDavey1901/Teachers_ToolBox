@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import TTImg from "../../assets/images/HeroTT.avif";
-import { TTSocials } from "../../components/shared/Socials";
+import { TTSocials } from "../shared/Socials";
 
 const HomeContainer = styled.div`
   display: flex;

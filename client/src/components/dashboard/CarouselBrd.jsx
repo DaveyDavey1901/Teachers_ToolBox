@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { TeachingResource,LearningActivities, Testing, SchoolStore} from "../TTDashboard/Carousel";
+import { TeachingResource,LearningActivities, Testing, SchoolStore} from "../dashboard/Carousel";
 import DashFooter from '../../assets/images/footerOne.avif'
 
 const HomeContainer = styled.div`

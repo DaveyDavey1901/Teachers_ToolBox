@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { SignOut } from "./signOut";
+import { LogOut } from "./logOut";
 import { MenuToggle } from "./menuToggle";
 import { Link } from "react-router-dom";
 
@@ -76,7 +76,7 @@ export function MobileLinks(props) {
             <StyledLink to="/contact">Contact Us</StyledLink>
           </LinkItem>
 
-          <SignOut />
+          <LogOut />
         </LinksUl>
       )}
     </NavLinksContainer>

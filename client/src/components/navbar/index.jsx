@@ -1,9 +1,10 @@
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
 import { NavLinks } from "./navLinks";
-import { SignOut} from "./signOut";
-import { ThemeSize } from "../styles/Responsive"
+import { SignOut } from "./signOut";
+import { ThemeSize } from "../styles/Responsive";
 import { MobileLinks } from "./mobileNavLinks";
+import { Link } from "react-router-dom";
 
 const NavbarContainer = styled.div`
   display: flex;
@@ -24,27 +25,30 @@ const NavbarContainer = styled.div`
 const NavbarLeft = styled.div`
   display: flex;
   margin-left: 4rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1rem;
 `;
 const NavbarMiddle = styled.div`
   display: flex;
   height: 100%;
-
 `;
 const NavbarRight = styled.div`
   display: flex;
-  margin-right:2rem;
-  
+  margin-right: 2rem;
 `;
 
 export function Navbar(props) {
-  const isMobile= useMediaQuery({ maxWidth: ThemeSize.mobile});
+  const isMobile = useMediaQuery({ maxWidth: ThemeSize.mobile });
 
   return (
     <NavbarContainer>
-      <NavbarLeft></NavbarLeft>
+      <NavbarLeft>
+        <Link to="/">Teachers ToolBox</Link>
+      </NavbarLeft>
       <NavbarMiddle>{!isMobile && <NavLinks />}</NavbarMiddle>
       <NavbarRight>
-        {!isMobile && <SignOut/>}
+        {!isMobile && <SignOut />}
         {isMobile && <MobileLinks />}
       </NavbarRight>
     </NavbarContainer>
