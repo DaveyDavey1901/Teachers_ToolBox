@@ -17,7 +17,7 @@ const LoginContainer = styled.div`
   }
 `;
 
-export function SignOut(props) {
+export function LogOut(props) {
   const navigate = useNavigate();
   const { user, logout } = useContext(AuthContext);
 
@@ -41,8 +41,7 @@ export function SignOut(props) {
         <>
           {" "}
           <Button onClick={() => navigate('/login')}>Login</Button>
-          <Button onClick={() => navigate('/register')}>Register</Button>
-         
+           
         </>
       )}
          </LoginContainer>
