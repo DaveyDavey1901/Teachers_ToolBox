@@ -7,8 +7,7 @@ import {Navbar} from "./components/navbar/index";
 // pages
 import { HomeP } from "./pages/Homepage";
 import { TTDashboard } from "./pages/TTDashboard";
-import Register  from "./pages/Register";
-import Login  from "./pages/Login";
+import {AccountBox } from "./components/accountBox/index";
 
 function App() {
   return (
@@ -18,10 +17,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomeP />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<AccountBox />} />
+          <Route path="/register" element={<AccountBox />} />
           <Route path="/ttdashboard" element={<TTDashboard />} />
-          <Route path="/register" element={<Register />} />
-        </Routes>
+       </Routes>
       </ThemeProvider>
     </>
   );
