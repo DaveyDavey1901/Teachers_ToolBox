@@ -7,7 +7,8 @@ import {Navbar} from "./components/navbar/index";
 // pages
 import { HomeP } from "./pages/Homepage";
 import { TTDashboard } from "./pages/TTDashboard";
-import {AccountBox } from "./components/accountBox/index";
+// form box holds the login / signup and contact forms
+import {FormBoxFile } from "./components/formBoxFile/index";
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomeP />} />
-          <Route path="/login" element={<AccountBox />} />
-          <Route path="/register" element={<AccountBox />} />
+          <Route path="/login" element={<FormBoxFile />} />
+          <Route path="/register" element={<FormBoxFile />} />
+          <Route path="/contact" element={<FormBoxFile />} />
           <Route path="/ttdashboard" element={<TTDashboard />} />
        </Routes>
       </ThemeProvider>
