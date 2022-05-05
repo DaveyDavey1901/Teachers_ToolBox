@@ -24,17 +24,18 @@ const HomeSection = styled.div`
   }
 `;
 const TTImgWrapper = styled.div`
-  width: 50%;
+  width: 100%;
   height: auto;
   margin: 2rem auto auto auto;
-  @media (max-width: ${({ theme }) => theme.tablet}) {
-    width: 60%;
-  }
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 70%;
-  }
 `;
-
+const Img = styled.img`
+  width: 60%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+`;
 export function HomeP() {
   return (
     <HomeContainer>
@@ -46,7 +47,12 @@ export function HomeP() {
         </p>
 
         <TTImgWrapper>
-          <img src={TTImg} alt="Teachers Toolbox Main" />
+          <Img
+            src={TTImg}
+            width="640"
+            height="640"
+            alt="Teachers Toolbox Main"
+          />
 
           <small>&copy; Teachers_Toolbox. All rights reserved 2022</small>
         </TTImgWrapper>

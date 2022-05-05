@@ -12,11 +12,17 @@ const HomeContainer = styled.div`
   width: 100vw;
   height: 50%;
   padding-top: 5rem;
-  `;
+
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+  }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+  }
+`;
+
 const HomeSection = styled.div`
   text-align: center;
   justify-content: center;
-  margin: 10rem;
+  margin: 5rem;
   padding: 1rem;
   height: 100%;
 
@@ -29,25 +35,27 @@ const HomeSection = styled.div`
     font-size: 1.6rem;
   }
 `;
+
 const TTImgWrapper = styled.div`
-  width: 50%;
+  width: 100%;
   height: auto;
   margin: 2rem auto auto auto;
-  @media (max-width: ${({ theme }) => theme.tablet}) {
-    width: 60%;
-  }
-  @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 70%;
-  }
 `;
-
+const Img = styled.img`
+  width: 60%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+`;
 export function DashHeader() {
   return (
     <HomeContainer>
       <HomeSection>
         <h1>Welcome Back</h1>
         <TTImgWrapper>
-          <img src={TTImg} alt="Teachers Toolbox Main" />
+          <Img src={TTImg} alt="Teachers Toolbox Main" />
         </TTImgWrapper>
         <TTSocials />
       </HomeSection>

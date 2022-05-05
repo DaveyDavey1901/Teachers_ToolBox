@@ -76,6 +76,7 @@ h1 {
 small{
 font-size: 1.2rem;
 }
+
 img{
   display:block;
   width: 100%;

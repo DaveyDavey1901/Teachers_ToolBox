@@ -9,14 +9,20 @@ const HomeContainer = styled.div`
   align-items: center;
   flex-direction: column;
   height: auto;
-  width: auto;
+  width: 80%;
+  margin: 0 auto;
   `;
 const HomeSection = styled.div`
   text-align: center;
   justify-content: center;
   margin: 0 2rem;
   height: 100%;
-  background-color: #d9d9a0;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
   border: solid 8px var(--color-bluedark);
   border-radius: 12px;
 `;
@@ -36,15 +42,32 @@ const Info = styled.div`
 `;
 
 const TTImgWrapper = styled.div`
-  width: 100rem;
   height: auto;
+  width: 100%;
   margin: 0 auto 12rem auto;
- 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @media (max-width: ${({ theme }) => theme.mobile}) {
     width: 70%;
   }
 `;
+const ImgMD = styled.img`
+  width: 90rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   @media (max-width: ${({ theme }) => theme.tablet}) {
+    width: 100%;
+  }
+  }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 100%;
+    
+  }
 
+`;
 export function FeatureCarousels() {
   return (
     <HomeContainer>
@@ -62,7 +85,7 @@ export function FeatureCarousels() {
         <SchoolStore />
       </HomeSection>
       <TTImgWrapper>
-        <img src={DashFooter}  alt="group of kids" />
+        <ImgMD src={DashFooter} width="320" height="320" alt="group of kids" />
       </TTImgWrapper>
     </HomeContainer>
   );
