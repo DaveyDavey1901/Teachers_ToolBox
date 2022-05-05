@@ -4,6 +4,7 @@ import { LoginForm } from "./loginForm";
 import { motion } from "framer-motion";
 import { AccountContext } from "./accountContext";
 import { SignUpForm } from "./signupForm";
+import { ContactForm } from "./contactForm";
 
 const Container = styled.div`
   width: 100%;
@@ -132,14 +133,20 @@ export function FormBoxFile(props) {
     }, 400);
   };
 
-  const switchToSignin = () => {
+  const switchToLogin = () => {
     playAnimation();
     setTimeout(() => {
       setActive("login");
     }, 400);
   };
+  const switchToContact = () => {
+    playAnimation();
+    setTimeout(() => {
+      setActive("contact");
+    }, 400);
+  };
 
-  const contextValue = { switchToSignup, switchToSignin };
+  const contextValue = { switchToSignup, switchToLogin, switchToContact };
 
   return (
     <AccountContext.Provider value={contextValue}>
@@ -166,10 +173,18 @@ export function FormBoxFile(props) {
                 <SmallText>Please Sign Up to continue!</SmallText>
               </HeaderContainer>
             )}
+            {active === "contact" && (
+              <HeaderContainer>
+                <HeaderText>Send A</HeaderText>
+                <HeaderText>Message</HeaderText>
+                <SmallText>Please Send Us a Message</SmallText>
+              </HeaderContainer>
+            )}
           </TopFormBox>
           <InnerContainer>
             {active === "login" && <LoginForm />}
             {active === "signup" && <SignUpForm />}
+            {active === "contact" && <ContactForm />}
           </InnerContainer>
           <BackDro
             initial={false}

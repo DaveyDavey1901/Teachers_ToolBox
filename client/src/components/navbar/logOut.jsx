@@ -40,7 +40,7 @@ export function LogOut(props) {
       ) : (
         <>
           {" "}
-          <Button onClick={() => navigate('/login')}>Login</Button>
+          <Button onClick={() => navigate('/login')}> Login </Button>
            
         </>
       )}

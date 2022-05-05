@@ -17,44 +17,41 @@ import { useMutation } from "@apollo/react-hooks";
 import { gql } from "graphql-tag";
 import { useNavigate } from "react-router-dom";
 
-const REGISTER_USER = gql`
-  mutation Mutation($registerInput: RegisterInput) {
-    registerUser(registerInput: $registerInput) {
-      username
-      email
-      password
-      token
-    }
-  }
-`;
+// const REGISTER_USER = gql`
+//   mutation Mutation($registerInput: RegisterInput) {
+//     registerUser(registerInput: $registerInput) {
+//       username
+//       email
+//       password
+//       token
+//     }
+//   }
+// `;
 
-export function SignUpForm(props) {
+export function ContactForm(props) {
   const { switchToLogin } = useContext(AccountContext);
- const context = useContext(AuthContext);
- let navigate = useNavigate();
- const [errors, setErrors] = useState([]);
+//  const context = useContext(AuthContext);
+//  let navigate = useNavigate();
+//  const [errors, setErrors] = useState([]);
 
- function registerUserCallback() {
-     registerUser();
- }
+//  function registerUserCallback() {
+//      registerUser();
+//  }
 
- const { onChange, onSubmit, values } = useForm(registerUserCallback, {
-   username: "",
-   email: "",
-   password: "",
-   confirmPassword: "",
- });
+//  const { onChange, onSubmit, values } = useForm(registerUserCallback, {
+   
+//  });
 
- const [registerUser] = useMutation(REGISTER_USER, {
-   update(proxy, { data: { registerUser: userData } }) {
-     context.logout(userData);
-     navigate("/");
-   },
-   onError({ graphQLErrors }) {
-     setErrors(graphQLErrors);
-   },
-   variables: { registerInput: values },
- });
+//  const [registerUser] = useMutation(REGISTER_USER, {
+//    update(proxy, { data: { registerUser: userData } }) {
+//      context.logout(userData);
+//      navigate("/");
+//    },
+//    onError({ graphQLErrors }) {
+//      setErrors(graphQLErrors);
+//    },
+//    variables: { registerInput: values },
+//  });
 
   return (
     <BoxContainer>
@@ -63,35 +60,35 @@ export function SignUpForm(props) {
           label="Username"
           name="username"
           placeholder="Username"
-          onChange={onChange}
+      //    onChange={onChange}
         />
         <Input
           label="Email"
           name="email"
           placeholder="Email"
-          onChange={onChange}
+       //   onChange={onChange}
         />
         <Input
           label="Password"
           name="password"
           placeholder="Password"
-          onChange={onChange}
+       //   onChange={onChange}
         />
         <Input
           label="Confirm password"
           name="confirmPassword"
           placeholder="Confirm Password"
-          onChange={onChange}
+        //  onChange={onChange}
         />
       </FormContainer>
-      {errors.map(function (error) {
+      {/* {errors.map(function (error) {
         return <div severity="error">{error.message}</div>;
-      })}
-      <SubmitButton variant="contained" onClick={onSubmit}>
-        Sign Up
+      })} */}
+      <SubmitButton >
+        Send
       </SubmitButton>
       <FadedLink>
-        Already have an account?
+        Send a message or return 
         <BoldLink href="#" onClick={switchToLogin}>
           Login
         </BoldLink>

@@ -26,7 +26,7 @@ const LOGIN_USER = gql`
 `;
 
 export function LoginForm(props) {
-  const { switchToSignup } = useContext(AccountContext);
+  const { switchToSignup, switchToContact } = useContext(AccountContext);
   let navigate = useNavigate();
   const context = useContext(AuthContext);
   const [errors, setErrors] = useState([]);
@@ -67,7 +67,12 @@ export function LoginForm(props) {
         />
       </FormContainer>
 
-      <FadedLink href="#">Forget your password contact us?</FadedLink>
+      <FadedLink>
+        Forget your password{" "}
+        <BoldLink href="#" onClick={switchToContact}>
+          Contact Us?
+        </BoldLink>
+      </FadedLink>
 
       {errors.map(function (error) {
         return <div severity="error">{error.message}</div>;
@@ -76,8 +81,8 @@ export function LoginForm(props) {
         Login
       </SubmitButton>
 
-      <FadedLink href="#">
-        Don't have an accoun?{" "}
+      <FadedLink>
+        Don't have an account?{" "}
         <BoldLink href="#" onClick={switchToSignup}>
           Sign Up
         </BoldLink>

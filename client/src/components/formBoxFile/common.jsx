@@ -16,7 +16,7 @@ export const FormContainer = styled.form`
   
 `;
 
-export const FadedLink = styled.a`
+export const FadedLink = styled.div`
   font-size: 1.2rem;
   color: #555;
   font-weight: 500;
