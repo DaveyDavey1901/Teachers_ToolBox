@@ -19,7 +19,7 @@
 </p>
 
 
-Teachers ToolBox is designed to give additional tools to teachers to help them teach their children in the current curriculum.  
+Teachers ToolBox is designed to give additional tools to teachers to help them teach their children in the current curriculum.  This site is under development in its early stages so some of what is listed will still be in the process of being built. Anything that has been completed to a point will be detailed below in its own section.
 
 Teachers Will Beable to:-
 
@@ -46,11 +46,38 @@ Parents Will Beable to:-
 5. Approve any of their childs shares/sales/donations in the Swap Shop!
 6. Utilise tools to help in their daily lives. 
 
+<div align="center" width="100%">
 
- 
+  <h3>HOMESCREEN</h3>
+   <p> 
+    <img width="60%" src="https://user-images.githubusercontent.com/86046871/166455029-7c42c0cf-af38-4960-b5b3-20fd528b0e6e.png"> 
+     </p>
+    <h4>Homescreen Details</h4>
+  <p>
+ When first arrive at the Teachers Toolbox you are presented with the homescreen.  At the top of the screen there is a `LOGIN` button and at the right of the
+  page there is a small `Navigation Menu` you will be able to vist the social media pages of the Teachers Toolbox where you will be able to keep uptodate with the development. Here you will be able to discuss what you like and don't about the Teachers ToolBox as well as sign up to test it and as well as give suggestions for further development. links are :- Facebook, Twitter, LinkedIn and you can also send me a message.
+  </p>
+
+</div>
 
 
-:file_folder:[Click Here to View the Screencast Video]()
+<div align="center" width="100%">
+  <h3>LOGIN / SIGNUP / CONTACT</h3>
+ <p>
+        <img width="60%" src="https://user-images.githubusercontent.com/86046871/166934777-86307d79-949d-4e55-a520-a52b569d83f2.gif"> 
+  </p>
+<h4>The Form Container</h4>
+<p>
+  On clicking on the LOGIN button at the top of the screen or clicking on the MAIL ICON you will be presented with the form container which will open up on whichever form you selected.  You can navigate to a different form by clicking on the links on the form at which time a short animation will play hiding the transition to the new form.  
+  
+  If you have an account you can sign in and be taken to the Teachers Toolbox landing page.  If you have not got an account you can create one via the sign up form or if you need to contact me about your account or any issues use the contact form.
+  
+  authentication is used to check all details are valid and if so a Json Token is assigned and you are granted access.
+  </p>
+
+</div>
+
+
 
 ## Live
 
@@ -72,7 +99,8 @@ MERN STACK
 6. Apollo Server  [link](https://www.apollographql.com/docs/)
 7. Framer Motion  [link](https://www.framer.com/motion/)
 8. Figma   [link](https://www.figma.com/)
-9. Swiper [link](https://swiperjs.com/)
+9. Swiper [link](https://swiperjs.com)
+10. FormSpark [link](https://formspark.io/)
 
 ## Contributing People
 
