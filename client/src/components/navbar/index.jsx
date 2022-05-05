@@ -1,10 +1,11 @@
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
 import { NavLinks } from "./navLinks";
-import { SignOut } from "./signOut";
+import { LogOut } from "./logOut";
 import { ThemeSize } from "../styles/Responsive";
 import { MobileLinks } from "./mobileNavLinks";
 import { Link } from "react-router-dom";
+
 
 const NavbarContainer = styled.div`
   display: flex;
@@ -48,7 +49,7 @@ export function Navbar(props) {
       </NavbarLeft>
       <NavbarMiddle>{!isMobile && <NavLinks />}</NavbarMiddle>
       <NavbarRight>
-        {!isMobile && <SignOut />}
+        {!isMobile && <LogOut />}
         {isMobile && <MobileLinks />}
       </NavbarRight>
     </NavbarContainer>

@@ -11,15 +11,15 @@ import { AuthProvider } from "./context/authContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <AuthProvider>
-    <ApolloProvider client={client}>
-      <BrowserRouter>
-        <React.StrictMode>
+  <React.StrictMode>
+    <AuthProvider>
+      <ApolloProvider client={client}>
+        <BrowserRouter>
           <App />
-        </React.StrictMode>
-      </BrowserRouter>
-    </ApolloProvider>
-  </AuthProvider>
+        </BrowserRouter>
+      </ApolloProvider>
+    </AuthProvider>
+  </React.StrictMode>
 );
 
 reportWebVitals();
