@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext} from "react";
 import {
   BoldLink,
   BoxContainer,
@@ -10,12 +10,12 @@ import {
 
 import { AccountContext } from "./accountContext";
 
-import { AuthContext } from "../../context/authContext";
-import { useForm } from "../../utils/hook";
-import { useMutation } from "@apollo/react-hooks";
+// import { AuthContext } from "../../context/authContext";
+// import { useForm } from "../../utils/hook";
+// import { useMutation } from "@apollo/react-hooks";
 
-import { gql } from "graphql-tag";
-import { useNavigate } from "react-router-dom";
+// import { gql } from "graphql-tag";
+// import { useNavigate } from "react-router-dom";
 
 // const REGISTER_USER = gql`
 //   mutation Mutation($registerInput: RegisterInput) {
