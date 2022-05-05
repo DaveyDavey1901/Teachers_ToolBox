@@ -46,6 +46,15 @@ Parents Will Beable to:-
 5. Approve any of their childs shares/sales/donations in the Swap Shop!
 6. Utilise tools to help in their daily lives. 
 
+
+
+## Live
+
+
+## Installation
+
+
+## Usage
 <div align="center" width="100%">
 
   <h3>HOMESCREEN</h3>
@@ -77,15 +86,6 @@ Parents Will Beable to:-
 
 </div>
 
-
-
-## Live
-
-
-## Installation
-
-
-## Usage
 
 ## Technologies Used
 
