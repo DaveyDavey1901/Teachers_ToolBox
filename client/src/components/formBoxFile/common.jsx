@@ -21,6 +21,7 @@ export const FadedLink = styled.div`
   color: #555;
   font-weight: 500;
   text-decoration: none;
+  margin-bottom:1rem;
 `;
 
 export const BoldLink = styled.a`
@@ -68,5 +69,20 @@ export const SubmitButton = styled.button`
   );
   &:hover {
     filter: brightness(1.03);
+  }
+`;
+
+export const Textarea = styled.textarea`
+  width: 100%;
+  height: 5rem;
+  resize: none;
+  outline: none;
+  border: 1px solid var(--color-bluedark);
+  padding: 0px 10px;
+  transition: all 200ms ease-in-out;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  &::placeholder {
+    color: #999;
   }
 `;

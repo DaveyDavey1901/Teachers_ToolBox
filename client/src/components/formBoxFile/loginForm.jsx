@@ -86,6 +86,7 @@ export function LoginForm(props) {
         <BoldLink href="#" onClick={switchToSignup}>
           Sign Up
         </BoldLink>
+        here
       </FadedLink>
     </BoxContainer>
   );

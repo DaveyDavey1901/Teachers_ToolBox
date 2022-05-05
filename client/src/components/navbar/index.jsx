@@ -6,6 +6,7 @@ import { ThemeSize } from "../styles/Responsive";
 import { MobileLinks } from "./mobileNavLinks";
 import { Link } from "react-router-dom";
 
+
 const NavbarContainer = styled.div`
   display: flex;
   position: fixed;

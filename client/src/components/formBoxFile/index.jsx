@@ -18,7 +18,7 @@ const Container = styled.div`
 
 const FormContainer = styled.div`
   width: 36rem;
-  min-height: 55rem;
+  min-height: 58rem;
   display: flex;
   flex-direction: column;
   border-radius: 24px;
@@ -106,6 +106,7 @@ const backdropVariants = {
     height: "55rem",
     borderRadius: "50%",
     transform: "rotate(60deg)",
+    
   },
 };
 
@@ -177,7 +178,7 @@ export function FormBoxFile(props) {
               <HeaderContainer>
                 <HeaderText>Send A</HeaderText>
                 <HeaderText>Message</HeaderText>
-                <SmallText>Please Send Us a Message</SmallText>
+                <SmallText>Please contact us with any questions you may have.</SmallText>
               </HeaderContainer>
             )}
           </TopFormBox>

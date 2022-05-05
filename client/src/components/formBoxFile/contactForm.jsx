@@ -1,4 +1,4 @@
-import { useContext} from "react";
+import { useContext } from "react";
 import {
   BoldLink,
   BoxContainer,
@@ -6,92 +6,31 @@ import {
   Input,
   FadedLink,
   SubmitButton,
+  Textarea,
 } from "./common";
 
 import { AccountContext } from "./accountContext";
 
-// import { AuthContext } from "../../context/authContext";
-// import { useForm } from "../../utils/hook";
-// import { useMutation } from "@apollo/react-hooks";
-
-// import { gql } from "graphql-tag";
-// import { useNavigate } from "react-router-dom";
-
-// const REGISTER_USER = gql`
-//   mutation Mutation($registerInput: RegisterInput) {
-//     registerUser(registerInput: $registerInput) {
-//       username
-//       email
-//       password
-//       token
-//     }
-//   }
-// `;
-
 export function ContactForm(props) {
   const { switchToLogin } = useContext(AccountContext);
-//  const context = useContext(AuthContext);
-//  let navigate = useNavigate();
-//  const [errors, setErrors] = useState([]);
-
-//  function registerUserCallback() {
-//      registerUser();
-//  }
-
-//  const { onChange, onSubmit, values } = useForm(registerUserCallback, {
-   
-//  });
-
-//  const [registerUser] = useMutation(REGISTER_USER, {
-//    update(proxy, { data: { registerUser: userData } }) {
-//      context.logout(userData);
-//      navigate("/");
-//    },
-//    onError({ graphQLErrors }) {
-//      setErrors(graphQLErrors);
-//    },
-//    variables: { registerInput: values },
-//  });
-
+ 
   return (
     <BoxContainer>
-      <FormContainer>
-        <Input
-          label="Username"
-          name="username"
-          placeholder="Username"
-      //    onChange={onChange}
-        />
-        <Input
-          label="Email"
-          name="email"
-          placeholder="Email"
-       //   onChange={onChange}
-        />
-        <Input
-          label="Password"
-          name="password"
-          placeholder="Password"
-       //   onChange={onChange}
-        />
-        <Input
-          label="Confirm password"
-          name="confirmPassword"
-          placeholder="Confirm Password"
-        //  onChange={onChange}
-        />
+      <FormContainer action="https://submit-form.com/VYOGDzCJ">
+        <label for="name">Name</label>
+        <Input type="text" id="name" name="name" required="" />
+        <label for="email">Email</label>
+        <Input type="email" id="email" name="email" required="" />
+        <label for="message">Message</label>
+        <Textarea id="message" name="message" required=""></Textarea>
+        <SubmitButton type="submit">Send</SubmitButton>
       </FormContainer>
-      {/* {errors.map(function (error) {
-        return <div severity="error">{error.message}</div>;
-      })} */}
-      <SubmitButton >
-        Send
-      </SubmitButton>
       <FadedLink>
-        Send a message or return 
+        Send a message or return to
         <BoldLink href="#" onClick={switchToLogin}>
           Login
         </BoldLink>
+        form
       </FadedLink>
     </BoxContainer>
   );
