@@ -24,7 +24,7 @@ const Socials = styled.div`
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     position: fixed;
-    bottom: 7rem;
+    bottom:68%;
   }
 `;
 
@@ -38,7 +38,7 @@ export function TTSocials() {
         target="_blank"
         alt="LinkedIn"
       >
-        <BsLinkedin size={15} />
+        <BsLinkedin size={18} />
       </a>
       <a
         href="https://twitter.com"
@@ -46,7 +46,7 @@ export function TTSocials() {
         target="_blank"
         alt="Twitter"
       >
-        <BsTwitter size={15} />
+        <BsTwitter size={18} />
       </a>
       <a
         href="https://facebook.com"
@@ -54,10 +54,10 @@ export function TTSocials() {
         target="_blank"
         alt="facebook"
       >
-        <BsFacebook size={15} />
+        <BsFacebook size={18} />
       </a>
       <a href="#contact" rel="noreferrer" target="_blank" alt="contact form">
-        <BsFillEnvelopeFill size={15} />
+        <BsFillEnvelopeFill size={18} />
       </a>
     </Socials>
   );

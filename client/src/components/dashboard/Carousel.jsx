@@ -59,9 +59,9 @@ const CarouselInfo = styled.div`
   width: 80%;
   margin: auto;
 
-  h5 {
+  p {
     font-weight: 700;
-    font-size: 2.2rem;
+    
   }
 `;
 
@@ -146,7 +146,7 @@ export function TeachingResource() {
               <SwiperSlide key={index}>
                 <CarouselSlide>
                   <CarouselInfo>
-                    <h5>{name}</h5>
+                    <h2>{name}</h2>
                     <small>{review}</small>
                   </CarouselInfo>
                 </CarouselSlide>
@@ -199,7 +199,7 @@ export function LearningActivities() {
               <SwiperSlide key={index}>
                 <CarouselSlide>
                   <CarouselInfo>
-                    <h5>{name}</h5>
+                    <h2>{name}</h2>
                     <small>{review}</small>
                   </CarouselInfo>
                 </CarouselSlide>
@@ -234,7 +234,7 @@ export function Testing() {
               <SwiperSlide key={index}>
                 <CarouselSlide>
                   <CarouselInfo>
-                    <h5>{name}</h5>
+                    <h2>{name}</h2>
                     <small>{review}</small>
                   </CarouselInfo>
                 </CarouselSlide>
@@ -287,7 +287,7 @@ export function SchoolStore() {
               <SwiperSlide key={index}>
                 <CarouselSlide>
                   <CarouselInfo>
-                    <h5>{name}</h5>
+                    <h2>{name}</h2>
                     <small>{review}</small>
                   </CarouselInfo>
                 </CarouselSlide>

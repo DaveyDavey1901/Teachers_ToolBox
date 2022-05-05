@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { BsClipboard, BsFillGearFill, BsFillChatDotsFill } from "react-icons/bs";
-import {FaToolbox} from 'react-icons/fa'
+import {
+  BsClipboard,
+  BsFillGearFill,
+  BsFillChatDotsFill,
+} from "react-icons/bs";
+import { FaToolbox } from "react-icons/fa";
 
 const MiniNav = styled.div`
   display: flex;
@@ -20,7 +24,7 @@ const MiniNav = styled.div`
 
   @media (max-width: ${({ theme }) => theme.mobile}) {
     position: fixed;
-    bottom: 7rem;
+    bottom: 68%;
   }
 `;
 
@@ -28,16 +32,17 @@ export function NavUtilities() {
   return (
     <MiniNav>
       <a href="#" alt="notice board">
-        <BsClipboard size={15} />
+        <BsClipboard size={18} />
       </a>
       <a href="#" alt="teachers toolbox">
-        <FaToolbox size={15} />
+        <FaToolbox size={18} />
       </a>
       <a href="#" alt="school chat">
-        <BsFillChatDotsFill size={15} />
+        <BsFillChatDotsFill size={18} />
+       
       </a>
-      <a href="#" alt="preferences" >
-        <BsFillGearFill size={15} />
+      <a href="#" alt="preferences">
+        <BsFillGearFill size={18} />
       </a>
     </MiniNav>
   );

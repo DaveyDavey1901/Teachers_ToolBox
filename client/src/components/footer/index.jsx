@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Address } from "./Address";
-
+import {SchDetails} from './Details'
 const FooterContainer = styled.div`
   display: flex;
   width: 100%;
@@ -38,6 +38,7 @@ export function Footer(props) {
       </FooterLeft>
       <FooterMiddle></FooterMiddle>
       <FooterRight>
+        <SchDetails />
         </FooterRight>
     </FooterContainer>
   );
