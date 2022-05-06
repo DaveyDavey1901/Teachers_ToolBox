@@ -61,13 +61,14 @@ Parents Will Beable to:-
    <p> 
     <img width="60%" src="https://user-images.githubusercontent.com/86046871/166455029-7c42c0cf-af38-4960-b5b3-20fd528b0e6e.png"> 
      </p>
+  </div>
     <h4>Homescreen Details</h4>
   <p>
  When first arrive at the Teachers Toolbox you are presented with the homescreen.  At the top of the screen there is a `LOGIN` button and at the right of the
   page there is a small `Navigation Menu` you will be able to vist the social media pages of the Teachers Toolbox where you will be able to keep uptodate with the development. Here you will be able to discuss what you like and don't about the Teachers ToolBox as well as sign up to test it and as well as give suggestions for further development. links are :- Facebook, Twitter, LinkedIn and you can also send me a message.
   </p>
 
-</div>
+
 
 
 <div align="center" width="100%">
@@ -75,7 +76,9 @@ Parents Will Beable to:-
  <p>
         <img width="60%" src="https://user-images.githubusercontent.com/86046871/166934777-86307d79-949d-4e55-a520-a52b569d83f2.gif"> 
   </p>
+  </div>
 <h4>The Form Container</h4>
+  
 <p>
   On clicking on the LOGIN button at the top of the screen or clicking on the MAIL ICON you will be presented with the form container which will open up on whichever form you selected.  You can navigate to a different form by clicking on the links on the form at which time a short animation will play hiding the transition to the new form.  
   
@@ -84,19 +87,33 @@ Parents Will Beable to:-
   authentication is used to check all details are valid and if so a Json Token is assigned and you are granted access.
   </p>
 
-</div>
+
 
 <div align="center" width="100%">
-  <h3>TEACHERS TOOLBOX MAIN PAGE</h3>
+  <h3>MAIN PAGE</h3>
  <p>
         <img width="30%" src="https://user-images.githubusercontent.com/86046871/167141287-e61a80aa-9807-400f-8eeb-5eb4931f1a87.gif"> 
   </p>
+  </div>
 <h4>Teachers Toolbox Main Page</h4>
-<p>
   
+<p>
+  After you have logged in your are taken to the Teachers Toolbox secure main page.  
+  This page consists of:-
+  
+  1. A Navigation bar which has links to the Subject Choice page, Contact Page and School Store.  This menu is responsive so it will reduce down to a burger       menu on small screens.
+  
+  2. A Navigation bar on the left of the screen that is present on all screens that will allow you to vist the Facebook, Twitter and LinkedIn pages for the        Teachers Toolbox to allow you to see what is in development and ways you can contribute.  Also a mail icon to contact me if there are any issues.
+     (These have not been setup yet).
+  
+  3. On the right hand side there is another menu with icons linking to preferences/themes, School Notice Board, The Teachers Toolbox and school messaging        service. (These are currently in development).
+  
+  4. At the center of the screen are a series of carousels displaying featured content for :- Teaching Resources, Learning Activties, Testing and the School      Store.
+  
+  5. At the bottom of the page where there is the details about the school and links to various pages.  These should all update depending on the user that        has been logged in.
   </p>
 
-</div>
+
 
 ## Technologies Used
 
