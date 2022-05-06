@@ -4,12 +4,13 @@ export const Button = styled.button`
   border-radius: 18px;
   border: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  width: 12rem;
+  width: auto;
+  white-space: nowrap;
 
   margin-right: 1rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  padding: 6px;
+  padding: 1rem;
   background-color: ${({ bg }) => bg || "#04253D"};
   color: ${({ color }) => color || "#ffff"};
   border: solid 2px var(--color-canaryyellow);
