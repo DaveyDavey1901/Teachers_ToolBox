@@ -86,6 +86,17 @@ Parents Will Beable to:-
 
 </div>
 
+<div align="center" width="100%">
+  <h3>TEACHERS TOOLBOX MAIN PAGE</h3>
+ <p>
+        <img width="30%" src="https://user-images.githubusercontent.com/86046871/167141287-e61a80aa-9807-400f-8eeb-5eb4931f1a87.gif"> 
+  </p>
+<h4>Teachers Toolbox Main Page</h4>
+<p>
+  
+  </p>
+
+</div>
 
 ## Technologies Used
 
