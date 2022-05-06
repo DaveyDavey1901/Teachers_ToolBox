@@ -31,17 +31,16 @@ const MiniNav = styled.div`
 export function NavUtilities() {
   return (
     <MiniNav>
-      <a href="#" alt="notice board">
+      <a href="#top" alt="notice board">
         <BsClipboard size={18} />
       </a>
-      <a href="#" alt="teachers toolbox">
+      <a href="#top" alt="teachers toolbox">
         <FaToolbox size={18} />
       </a>
-      <a href="#" alt="school chat">
+      <a href="#top" alt="school chat">
         <BsFillChatDotsFill size={18} />
-       
       </a>
-      <a href="#" alt="preferences">
+      <a href="#top" alt="preferences">
         <BsFillGearFill size={18} />
       </a>
     </MiniNav>

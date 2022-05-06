@@ -85,8 +85,9 @@ img{
 
 
 .swiper-pagination-clickable .swiper-pagination-bullet{
-  background: var(--color-canaryyellow)
-  
+  background: var(--color-canaryyellow);
+  height:1.6rem;
+  width:1.6rem;
 }
 
 `;

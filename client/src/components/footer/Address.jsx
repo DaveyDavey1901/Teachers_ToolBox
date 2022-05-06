@@ -5,8 +5,7 @@ import { BsLinkedin, BsTwitter, BsWhatsapp } from "react-icons/bs";
 const MyAddress = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin: 2rem 0 1rem 4rem;
   color: var(--color-white);
   li {
     list-style: none;
@@ -23,7 +22,7 @@ const Hlight = styled.span`
 const Socials = styled.div`
   display: flex;
   gap:1rem;
-  margin:1rem 0rem;
+  margin:1rem;
 `;
 export function Address() {
   return (

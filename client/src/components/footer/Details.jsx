@@ -3,10 +3,7 @@ import styled from "styled-components";
 const MyAddress = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  li {
+    li {
     list-style: none;
     font-size: 1.6rem;
   }
@@ -14,16 +11,10 @@ const MyAddress = styled.div`
   margin-right: 3.8rem;
 `;
 
-const Hlight = styled.span`
-  color: #ffdd19;
-  margin: 0 1rem;
-`;
-
 const InfoContainer = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: row;
+  margin-top:2rem;
 `;
 export function SchDetails() {
   return (
@@ -32,32 +23,32 @@ export function SchDetails() {
         <MyAddress>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="#top">Home</a>
             </li>
             <li>
-              <a href="#">Subjects</a>
+              <a href="#top">Subjects</a>
             </li>
             <li>
-              <a href="#">Store</a>
+              <a href="#top">Store</a>
             </li>
             <li>
-              <a href="#">Dashboard</a>
+              <a href="#top">Dashboard</a>
             </li>
           </ul>
         </MyAddress>
         <MyAddress>
           <ul>
             <li>
-              <a href="/">School Website</a>
+              <a href="#top">School Website</a>
             </li>
             <li>
-              <a href="#">About TT</a>
+              <a href="#top">About TT</a>
             </li>
             <li>
-              <a href="#">Our Services</a>
+              <a href="#top">Our Services</a>
             </li>
             <li>
-              <a href="#">Contact Us</a>
+              <a href="#top">Contact Us</a>
             </li>
           </ul>
         </MyAddress>
