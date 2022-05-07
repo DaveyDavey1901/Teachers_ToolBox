@@ -3,7 +3,7 @@ import { TTDash } from "../components/dashboard";
 export function TTDashboard() {
   return (
     <div>
-      <TTDash />
+            <TTDash />
     </div>
   );
 }

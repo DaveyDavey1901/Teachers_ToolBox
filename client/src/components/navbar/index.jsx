@@ -26,13 +26,14 @@ const NavbarContainer = styled.div`
 const NavbarLeft = styled.div`
   display: flex;
   margin-left: 4rem;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   font-weight: 700;
   padding: 1rem;
 `;
 const NavbarMiddle = styled.div`
   display: flex;
   height: 100%;
+  
 `;
 const NavbarRight = styled.div`
   display: flex;
@@ -40,7 +41,7 @@ const NavbarRight = styled.div`
 `;
 
 export function Navbar(props) {
-  const isMobile = useMediaQuery({ maxWidth: ThemeSize.mobile });
+  const isMobile = useMediaQuery({ maxWidth: ThemeSize.tablet});
 
   return (
     <NavbarContainer>

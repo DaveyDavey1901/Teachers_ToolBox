@@ -1,8 +1,13 @@
 import React from "react";
-import {dataActivity, dataTeaching, dataTesting, dataStore} from "../../data/content";
+import {
+  dataActivity,
+  dataTeaching,
+  dataTesting,
+  dataStore,
+} from "../../data/content";
 import styled from "styled-components";
 // import Swiper core and required modules
-import { Pagination } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // import images
@@ -17,7 +22,7 @@ import "swiper/css/pagination";
 
 const CarouselContainer = styled.div`
 display: flex;
-  width: 60rem;
+  width: 40rem;
   height:35rem;
   margin: 4rem;
   justify - content: center;
@@ -54,30 +59,54 @@ const CarouselInfo = styled.div`
   width: 80%;
   margin: auto;
 
-  h5 {
+  p {
     font-weight: 700;
-    font-size: 2.2rem;
+    
   }
 `;
 
 const TTImgWrapper = styled.div`
   width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+`;
+const Img = styled.img`
+  width: 32rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 
-  #cOne, #cThree{
-    height:24rem;
-    width:24rem;
-    align-items : center;
-    justify-content: center;
-    margin:0 auto ;
+   @media (max-width: ${({ theme }) => theme.tablet}) {
+    width: 70%;
+    
   }
-
-  
-  @media (max-width: ${({ theme }) => theme.tablet}) {
-    width: 60%;
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 40%;
+    
+  }
+`;
+
+const ImgMD = styled.img`
+  width: 50rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   @media (max-width: ${({ theme }) => theme.tablet}) {
     width: 70%;
   }
+  }
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 60%;
+    
+  }
+
 `;
 
 const Section = styled.div`
@@ -85,7 +114,9 @@ const Section = styled.div`
   flex-direction: row;
   align-items: center;
 
-  @media (max-width: ${({ theme }) => theme.tablet}) {}
+  @media (max-width: ${({ theme }) => theme.tablet}) {
+    
+  }
   }
   @media (max-width: ${({ theme }) => theme.mobile}) {
     flex-direction: column;
@@ -95,21 +126,27 @@ const Section = styled.div`
 
 export function TeachingResource() {
   return (
-    <Section id="cSectionOdd">
+    <Section >
       <CarouselContainer>
         <Swiper
           // install Swiper modules
-          modules={[Pagination]}
+          modules={[Autoplay, Pagination]}
           spaceBetween={40}
           slidesPerView={1}
           pagination={{ clickable: true }}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          className="SwiperOne"
         >
           {dataTeaching.map(({ name, review }, index) => {
             return (
               <SwiperSlide key={index}>
                 <CarouselSlide>
                   <CarouselInfo>
-                    <h5>{name}</h5>
+                    <h2>{name}</h2>
                     <small>{review}</small>
                   </CarouselInfo>
                 </CarouselSlide>
@@ -119,7 +156,13 @@ export function TeachingResource() {
         </Swiper>
       </CarouselContainer>
       <TTImgWrapper>
-        <img src={CarouselImg1} alt="girl flying on a book" />
+        <ImgMD
+          id="cOne"
+          src={CarouselImg1}
+          width="640"
+          height="320"
+          alt="girl flying on a book"
+        />
       </TTImgWrapper>
     </Section>
   );
@@ -127,24 +170,36 @@ export function TeachingResource() {
 
 export function LearningActivities() {
   return (
-    <Section >
+    <Section className="cSectionRev">
       <TTImgWrapper>
-        <img id="cOne" src={CarouselImg2} alt="group of kids" />
+        <Img
+          id="cTwo"
+          src={CarouselImg2}
+          width="320"
+          height="320"
+          alt="group of kids"
+        />
       </TTImgWrapper>
       <CarouselContainer>
         <Swiper
           // install Swiper modules
-          modules={[Pagination]}
+          modules={[Autoplay, Pagination]}
           spaceBetween={40}
           slidesPerView={1}
           pagination={{ clickable: true }}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2400,
+            disableOnInteraction: false,
+          }}
+          className="SwiperOne"
         >
           {dataActivity.map(({ name, review }, index) => {
             return (
               <SwiperSlide key={index}>
                 <CarouselSlide>
                   <CarouselInfo>
-                    <h5>{name}</h5>
+                    <h2>{name}</h2>
                     <small>{review}</small>
                   </CarouselInfo>
                 </CarouselSlide>
@@ -159,21 +214,27 @@ export function LearningActivities() {
 
 export function Testing() {
   return (
-    <Section >
+    <Section>
       <CarouselContainer>
         <Swiper
           // install Swiper modules
-          modules={[Pagination]}
+          modules={[Autoplay, Pagination]}
           spaceBetween={40}
           slidesPerView={1}
           pagination={{ clickable: true }}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2300,
+            disableOnInteraction: false,
+          }}
+          className="SwiperOne"
         >
           {dataTesting.map(({ name, review }, index) => {
             return (
               <SwiperSlide key={index}>
                 <CarouselSlide>
                   <CarouselInfo>
-                    <h5>{name}</h5>
+                    <h2>{name}</h2>
                     <small>{review}</small>
                   </CarouselInfo>
                 </CarouselSlide>
@@ -183,7 +244,13 @@ export function Testing() {
         </Swiper>
       </CarouselContainer>
       <TTImgWrapper>
-        <img id="cThree" src={CarouselImg3} alt="group of kids" />
+        <Img
+          id="cThree"
+          src={CarouselImg3}
+          width="640"
+          height="320"
+          alt="group of kids"
+        />
       </TTImgWrapper>
     </Section>
   );
@@ -193,22 +260,34 @@ export function SchoolStore() {
   return (
     <Section>
       <TTImgWrapper>
-        <img src={CarouselImg4} alt="boy flying on pencil" />
+        <ImgMD
+          id="cFour"
+          src={CarouselImg4}
+          width="320"
+          height="320"
+          alt="boy flying on pencil"
+        />
       </TTImgWrapper>
       <CarouselContainer>
         <Swiper
           // install Swiper modules
-          modules={[Pagination]}
+          modules={[Autoplay, Pagination]}
           spaceBetween={40}
           slidesPerView={1}
           pagination={{ clickable: true }}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2200,
+            disableOnInteraction: false,
+          }}
+          className="SwiperOne"
         >
           {dataStore.map(({ name, review }, index) => {
             return (
               <SwiperSlide key={index}>
                 <CarouselSlide>
                   <CarouselInfo>
-                    <h5>{name}</h5>
+                    <h2>{name}</h2>
                     <small>{review}</small>
                   </CarouselInfo>
                 </CarouselSlide>

@@ -9,11 +9,12 @@ const NavLinksContainer = styled.div`
   display: flex;
   z-index: 99;
   color: var(--color-white);
+  
 `;
 
 
 const LinksUl = styled.ul`
-  margin:0;
+  margin: 0;
   padding: 0;
   display: flex;
   height: 100%;
@@ -24,7 +25,7 @@ const LinksUl = styled.ul`
   position: fixed;
   top: 6.2rem;
   left: 0;
-`;
+  `;
 
 const LinkItem = styled.li`
   width: 100%;
@@ -48,7 +49,7 @@ const LinkItem = styled.li`
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: inherit;
-  font-size: inherit;
+  font-size: 2.8rem;
   &:hover {
     color: #ffdd19;
     
