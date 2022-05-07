@@ -48,7 +48,7 @@ export function SignUpForm(props) {
  const [registerUser] = useMutation(REGISTER_USER, {
    update(proxy, { data: { registerUser: userData } }) {
      context.logout(userData);
-     navigate("/");
+     navigate("/TTDashboard");
    },
    onError({ graphQLErrors }) {
      setErrors(graphQLErrors);
