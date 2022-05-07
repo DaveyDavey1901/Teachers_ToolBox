@@ -41,7 +41,7 @@ const NavbarRight = styled.div`
 `;
 
 export function Navbar(props) {
-  const isMobile = useMediaQuery({ maxWidth: ThemeSize.mobile });
+  const isMobile = useMediaQuery({ maxWidth: ThemeSize.tablet});
 
   return (
     <NavbarContainer>
