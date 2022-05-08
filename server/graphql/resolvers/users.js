@@ -1,12 +1,8 @@
 const User = require('../../models/User');
-const {
-    ApolloServer,
-    gql,
-    UserInputError
-} = require('apollo-server');
 const { ApolloError } = require('apollo-server-errors');
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
+const { SECRET_KEY } = require('../../config');
 
 module.exports = {
     Mutation: {
@@ -28,7 +24,7 @@ module.exports = {
 
             const token = jwt.sign(
                 { user_id: newUser._id, email },
-                "UNSAFESTRING",
+                SECRET_KEY,
                 {
                   expiresIn: "2h",
                 }
@@ -51,7 +47,7 @@ module.exports = {
                 // Create token
                 const token = jwt.sign(
                   { user_id: user._id, email },
-                  "UNSAFESTRING",
+                  SECRET_KEY,
                   {
                     expiresIn: "2h",
                   }
