@@ -11,11 +11,7 @@ const bcrypt = require("bcryptjs");
 module.exports = {
     Mutation: {
         async registerUser(_, {registerInput: {username, email, password} }) {
-            /* Do input validation
-            if (!(email && password && first_name && last_name)) {
-                res.status(400).send("All input is required");
-            }
-            */
+           
             const oldUser = await User.findOne({ email });
 
             if (oldUser) {
@@ -48,11 +44,7 @@ module.exports = {
             };
         },
         async loginUser(_, {loginInput: {email, password} }) {
-            /* Do input validation
-            if (!(email && password)) {
-                res.status(400).send("All input is required");
-            }
-            */
+           
             const user = await User.findOne({ email });
 
             if (user && (await bcrypt.compare(password, user.password))) {

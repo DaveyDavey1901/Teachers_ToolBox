@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
+   "dependencies": {
     "@apollo/client": "^3.6.2",
     "@apollo/react-hooks": "^4.0.0",
     "@react-google-maps/api": "^2.10.2",
@@ -24,6 +24,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deply":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
